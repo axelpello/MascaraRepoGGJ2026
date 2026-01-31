@@ -35,6 +35,7 @@ public class MainGM : MonoBehaviour
                             Instantiate(MiniJuegos[2], new Vector3(0, 0, 0), Quaternion.identity);
                             Debug.Log("2");
                             break;
+
                     }
                 }
                 //Debug.Log("Click sobre: " + hit.collider.name);
