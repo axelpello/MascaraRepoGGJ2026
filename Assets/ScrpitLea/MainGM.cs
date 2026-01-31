@@ -16,6 +16,7 @@ public class MainGM : MonoBehaviour
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 
+            Debug.Log(hit.collider.gameObject.name);
             if (hit.collider != null)
             {
                 if (hit.collider.gameObject.layer == 3)
