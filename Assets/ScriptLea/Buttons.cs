@@ -7,4 +7,9 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+    public void BtnSalir()
+    {
+        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
 }
