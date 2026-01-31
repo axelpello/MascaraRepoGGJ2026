@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainGM
   MiniJuegos:
-  - {fileID: 3661658380067785795, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
+  - {fileID: 8695351537920374629, guid: 7ba0ab4c4aa31ff45948f722825e6da9, type: 3}
   - {fileID: 8695351537920374629, guid: 5b3437e35b02ca54cae74311548e3bf3, type: 3}
   - {fileID: 3661658380067785795, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
 --- !u!1 &2107291857
