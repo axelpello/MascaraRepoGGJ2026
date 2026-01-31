@@ -13,12 +13,13 @@ public class MainGM : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //Guarda la posicion del mouse en mousePos cuando hace click
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero); //En hit se guarda lo que clickeó
+            Debug.Log  ("lo detecto!");
 
-            if (hit.collider != null)
+            if (hit.collider != null) //Si toque algo
             {
-                if (hit.collider.gameObject.layer == 3)
+                if (hit.collider.gameObject.layer == 3) //El layer 3 es "minijuegos".
                 {
                     switch (hit.collider.tag)
                     {
