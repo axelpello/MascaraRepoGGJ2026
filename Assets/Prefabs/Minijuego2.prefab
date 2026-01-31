@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2759068099589232923}
   - component: {fileID: 6193465164272007114}
-  - component: {fileID: 1666187001686149235}
+  - component: {fileID: 5105066522504904734}
   m_Layer: 0
   m_Name: Crayon (5)
   m_TagString: Crayon
@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 484726196015783265}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5268, y: 1.0363, z: -0.0088559}
-  m_LocalScale: {x: 0.92315876, y: 4.9581637, z: 1}
+  m_LocalPosition: {x: 1.0491, y: 0.75852, z: -0.0088559}
+  m_LocalScale: {x: 0.5156707, y: 3.1608293, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574190859351542359}
@@ -92,22 +92,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &1666187001686149235
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!61 &5105066522504904734
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484726196015783265}
-  m_BodyType: 0
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -115,10 +109,35 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &563925006946700223
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4886484830415182595}
   - component: {fileID: 6431756458964554120}
-  - component: {fileID: 1670139937935192959}
+  - component: {fileID: 702404390662324520}
   m_Layer: 0
   m_Name: Crayon (4)
   m_TagString: Crayon
@@ -146,8 +165,8 @@ Transform:
   m_GameObject: {fileID: 563925006946700223}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.056989774, w: 0.99837476}
-  m_LocalPosition: {x: -2.2, y: 0.9, z: -0.014844}
-  m_LocalScale: {x: 0.92315876, y: 4.9581637, z: 1}
+  m_LocalPosition: {x: -0.47411, y: 0.67163, z: -0.014844}
+  m_LocalScale: {x: 0.51567084, y: 3.1608293, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574190859351542359}
@@ -211,22 +230,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &1670139937935192959
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!61 &702404390662324520
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563925006946700223}
-  m_BodyType: 0
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -234,10 +247,35 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &1619228636305551612
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,8 +302,8 @@ Transform:
   m_GameObject: {fileID: 1619228636305551612}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.71, y: 0.27, z: 0.0000000046566}
-  m_LocalScale: {x: 29.737913, y: 17.495373, z: 1}
+  m_LocalPosition: {x: -0.85, y: 0.27, z: 0}
+  m_LocalScale: {x: 13.081488, y: 11.1533, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574190859351542359}
@@ -329,6 +367,50 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &5350129303387805041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6717146042214874652}
+  - component: {fileID: 3950790083496225228}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6717146042214874652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350129303387805041}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.63019, y: -0.03218, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7574190859351542359}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3950790083496225228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350129303387805041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d16a307853cb5b40bb291dab0f5b9a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseScriptMJ2
 --- !u!1 &5936837327972077902
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2227784232263096260}
   - component: {fileID: 8501760314954463846}
-  - component: {fileID: 1528249441388370208}
+  - component: {fileID: 4580436353619840086}
   m_Layer: 0
   m_Name: Crayon (6)
   m_TagString: Crayon
@@ -356,8 +438,8 @@ Transform:
   m_GameObject: {fileID: 5936837327972077902}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.379, y: -1.0409, z: -0.036342}
-  m_LocalScale: {x: 0.92315876, y: 4.9581637, z: 1}
+  m_LocalPosition: {x: -4.4843, y: -0.5657, z: -0.036342}
+  m_LocalScale: {x: 0.5156707, y: 3.1608293, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574190859351542359}
@@ -421,22 +503,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &1528249441388370208
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!61 &4580436353619840086
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5936837327972077902}
-  m_BodyType: 0
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -444,10 +520,35 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &6443906795149108836
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3203242952954229605}
   - component: {fileID: 4006652376643029002}
-  - component: {fileID: 2882924192920152452}
+  - component: {fileID: 606138047961880098}
   m_Layer: 0
   m_Name: Crayon (1)
   m_TagString: Crayon
@@ -475,8 +576,8 @@ Transform:
   m_GameObject: {fileID: 6443906795149108836}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.1548, y: -0.70821, z: -0.021583}
-  m_LocalScale: {x: 0.92315876, y: 4.9581637, z: 1}
+  m_LocalPosition: {x: -2.1247, y: -0.35361, z: -0.021583}
+  m_LocalScale: {x: 0.5156707, y: 3.1608293, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574190859351542359}
@@ -540,22 +641,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &2882924192920152452
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!61 &606138047961880098
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6443906795149108836}
-  m_BodyType: 0
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -563,10 +658,35 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &6571751765039455884
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,7 +697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3982457669196422656}
   - component: {fileID: 3919272434645252285}
-  - component: {fileID: 1572344753874734032}
+  - component: {fileID: 4352101610323142887}
   m_Layer: 0
   m_Name: CRAYONNECESARIO
   m_TagString: Crayon
@@ -594,8 +714,8 @@ Transform:
   m_GameObject: {fileID: 6571751765039455884}
   serializedVersion: 2
   m_LocalRotation: {x: 0.002060945, y: -0.008480953, z: -0.23612729, w: 0.971683}
-  m_LocalPosition: {x: 0.5, y: -1.1, z: 0}
-  m_LocalScale: {x: 0.93264395, y: 5.971245, z: 1}
+  m_LocalPosition: {x: 1.0341, y: -0.60338, z: 0}
+  m_LocalScale: {x: 0.5209691, y: 3.8066697, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574190859351542359}
@@ -659,22 +779,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &1572344753874734032
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!61 &4352101610323142887
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6571751765039455884}
-  m_BodyType: 0
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -682,10 +796,35 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &6690822005689477481
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,7 +835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7083420200182519779}
   - component: {fileID: 8250339826814390491}
-  - component: {fileID: 681988182958177844}
+  - component: {fileID: 1800726650075525832}
   m_Layer: 0
   m_Name: Crayon (3)
   m_TagString: Crayon
@@ -713,8 +852,8 @@ Transform:
   m_GameObject: {fileID: 6690822005689477481}
   serializedVersion: 2
   m_LocalRotation: {x: 0.016908342, y: -0.0043064663, z: 0.24677756, w: 0.96891516}
-  m_LocalPosition: {x: -2.1176, y: -0.24887, z: -0.01218}
-  m_LocalScale: {x: 0.92315876, y: 4.9581637, z: 1}
+  m_LocalPosition: {x: -0.42808, y: -0.06078, z: -0.01218}
+  m_LocalScale: {x: 0.5156707, y: 3.1608293, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574190859351542359}
@@ -778,22 +917,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &681988182958177844
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!61 &1800726650075525832
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6690822005689477481}
-  m_BodyType: 0
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -801,10 +934,35 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &7805445226485319681
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,8 +973,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1653355159774118371}
   - component: {fileID: 8203071322948111059}
-  - component: {fileID: 7006218025868429714}
-  m_Layer: 0
+  - component: {fileID: 7352453198032825489}
+  m_Layer: 3
   m_Name: Crayon
   m_TagString: Crayon
   m_Icon: {fileID: 0}
@@ -832,8 +990,8 @@ Transform:
   m_GameObject: {fileID: 7805445226485319681}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.18465798, w: 0.98280287}
-  m_LocalPosition: {x: -4.5, y: 1.4, z: -0.02238}
-  m_LocalScale: {x: 0.76653564, y: 5.971245, z: 1}
+  m_LocalPosition: {x: -1.7589, y: 0.99038, z: -0.02238}
+  m_LocalScale: {x: 0.4281821, y: 3.8066685, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7574190859351542359}
@@ -897,22 +1055,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &7006218025868429714
-Rigidbody2D:
-  serializedVersion: 5
+--- !u!61 &7352453198032825489
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7805445226485319681}
-  m_BodyType: 0
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -920,10 +1072,35 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &8695351537920374629
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,7 +1112,7 @@ GameObject:
   - component: {fileID: 7574190859351542359}
   m_Layer: 0
   m_Name: Minijuego2
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -953,6 +1130,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6717146042214874652}
   - {fileID: 8063193791187095975}
   - {fileID: 1653355159774118371}
   - {fileID: 3203242952954229605}
