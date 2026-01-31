@@ -4,24 +4,39 @@ using UnityEngine.SceneManagement;
 public class SoundController : MonoBehaviour
 {
     public AudioSource AS_Soundtrack; // arrastra un AudioSource en el inspector (o se creará en Start)
-    //public AudioClip C_Soundtrack; // arrastra aquí el clip
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public enum SFX
+    {
+        Aceptado,
+        CajonAbriendoseLapices,
+        CajonAbriendose,
+        ClickButton,
+        Denegado,
+        Escaner,
+        heHey,
+        Hmm,
+        Huh_01,
+        Huh_02,
+        Idea,
+        Lapices,
+        Limpio,
+        Mopa,
+        Sucio,
+        TelaSillon,
+        Texto_01,
+        Texto_02,
+        TijeraTelaSillon,
+        Tijeras
+    }
+    public AudioClip[] sfxClips;
+
+    public void PlaySFX(SFX sfx)
+    {
+        AS_Soundtrack.PlayOneShot(sfxClips[(int)sfx]);
+    }
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "MainMenu")
-        {
-            AS_Soundtrack.playOnAwake = true;
-            AS_Soundtrack.loop = true;
-        }
+        //PlaySFX(SFX.Aceptado);
     }
-    public void PlayOnce(AudioSource AS)
-    {
-        AS.loop = false;
-        AS.Play();
-    }
-    public void StopSound(AudioSource AS)
-    {
-        AS.Stop(); // detiene todo lo que reproduce esta AudioSource
-    }
+
 }

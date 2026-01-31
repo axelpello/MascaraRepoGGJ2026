@@ -5,8 +5,10 @@ public class JugadorNiebla : MonoBehaviour
     public float velocidad = 2f;
     Rigidbody2D rb;
     public float rotateSpeed = 10f;
+    Vector3 pos;
     void Awake()
     {
+        pos = gameObject.transform.localPosition;
         rb = GetComponent<Rigidbody2D>();
     }
     void FixedUpdate()
@@ -28,5 +30,9 @@ public class JugadorNiebla : MonoBehaviour
            rotateSpeed * Time.fixedDeltaTime
        );
         rb.MoveRotation(angle);
+    }
+    public void ResetPos()
+    {
+        gameObject.transform.localPosition = pos;
     }
 }

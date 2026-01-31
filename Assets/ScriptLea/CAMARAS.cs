@@ -31,10 +31,5 @@ public class CAMARAS : MonoBehaviour
         if (Quaternion.Angle(transform.rotation, target) < 0.5f)
             goRight = !goRight;
     }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("perdiste");
-        //collision.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
-        //collision.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
-    }
+
 }
