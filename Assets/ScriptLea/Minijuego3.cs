@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -53,8 +54,16 @@ public class Minijuego3 : MonoBehaviour
     {
         while (isSpawnin)
         {
-            Instantiate(basura[Random.Range(0, basura.Count())], positions[Random.Range(0, positions.Count())].transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(.5f);
+            int rnd = Random.Range(0, 100);
+            if (rnd > 87)
+            {
+                Instantiate(basura[0], positions[Random.Range(0, positions.Count())].transform.position, Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(basura[1], positions[Random.Range(0, positions.Count())].transform.position, Quaternion.identity);
+            }
+            yield return new WaitForSeconds(.1f);
         }
     }
 
