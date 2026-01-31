@@ -669,7 +669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainGM
   MiniJuegos:
   - {fileID: 3661658380067785795, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
-  - {fileID: 3661658380067785795, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
+  - {fileID: 8695351537920374629, guid: 5b3437e35b02ca54cae74311548e3bf3, type: 3}
   - {fileID: 3661658380067785795, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
 --- !u!1 &2107291857
 GameObject:
@@ -760,11 +760,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 426977355814316872, guid: 0383d6f14dd4f904585bfc5e97fa4a7c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0528
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 426977355814316872, guid: 0383d6f14dd4f904585bfc5e97fa4a7c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.17
+      value: 1.51
       objectReference: {fileID: 0}
     - target: {fileID: 426977355814316872, guid: 0383d6f14dd4f904585bfc5e97fa4a7c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -798,6 +798,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2631796148580916269, guid: 0383d6f14dd4f904585bfc5e97fa4a7c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631796148580916269, guid: 0383d6f14dd4f904585bfc5e97fa4a7c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.68386066
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631796148580916269, guid: 0383d6f14dd4f904585bfc5e97fa4a7c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6650944
+      objectReference: {fileID: 0}
     - target: {fileID: 8180852049641497585, guid: 0383d6f14dd4f904585bfc5e97fa4a7c, type: 3}
       propertyPath: m_Name
       value: Square
@@ -823,6 +835,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1637060076240465975, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1904215620745668641, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.7
@@ -866,6 +882,18 @@ PrefabInstance:
     - target: {fileID: 3661658380067785795, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
       propertyPath: m_Name
       value: Circle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730958754677701569, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730958754677701569, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
+      propertyPath: m_Simulated
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730958754677701569, guid: 8c3e8a9d88f046246bc2bc6adc8292ae, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
