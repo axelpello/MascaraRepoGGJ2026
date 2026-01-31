@@ -32,6 +32,10 @@ public class MaskCuttingMinigame : MonoBehaviour
   [Header("Capture Settings")]
   public int captureHeight = 500; // Height of captured image (width auto-calculated from camera aspect ratio)
 
+  [Header("Audio")]
+  public AudioSource audioSource; // AudioSource component for playing sounds
+  public AudioClip scissorsCuttingSound; // Sound effect played when clicking/cutting
+
   [Header("Output")]
   public Sprite generatedMaskSprite; // Final mask sprite result
   public Texture2D generatedMaskTexture; // Final mask texture result
@@ -199,6 +203,12 @@ public class MaskCuttingMinigame : MonoBehaviour
       {
         lineRenderer.positionCount = drawnPoints.Count;
         lineRenderer.SetPosition(drawnPoints.Count - 1, new Vector3(mousePos2D.x, mousePos2D.y, 0));
+      }
+
+      // Play scissors cutting sound effect
+      if (audioSource != null && scissorsCuttingSound != null)
+      {
+        audioSource.PlayOneShot(scissorsCuttingSound);
       }
     }
   }
