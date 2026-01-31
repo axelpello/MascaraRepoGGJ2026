@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
@@ -24,9 +25,16 @@ public class MaskCuttingMinigame : MonoBehaviour
 
   private List<Vector2> drawnPoints = new List<Vector2>();
   private bool isDrawing = false;
+  private bool isProcessing = false; // Prevent multiple simultaneous captures
+  private int currentStep = 1; // 1=Face outline, 2=Left eye, 3=Right eye, 4=Mouth
+  private Texture2D workingTexture; // Texture that gets modified across steps
+
+  private string[] stepNames = { "Face Outline", "Left Eye", "Right Eye", "Mouth" };
 
   void Start()
   {
+    Debug.Log($"[MaskCutting] Start() called - GameObject: {gameObject.name}");
+
     // Setup line renderer
     if (lineRenderer != null)
     {
@@ -37,32 +45,69 @@ public class MaskCuttingMinigame : MonoBehaviour
       lineRenderer.positionCount = 0;
       lineRenderer.useWorldSpace = true;
     }
+
+    Debug.Log($"[MaskCutting] Step {currentStep}: Draw {stepNames[currentStep - 1]}");
   }
 
   void Update()
   {
-    // Start drawing on mouse down
+    // Add point on each mouse click
     if (Input.GetMouseButtonDown(0))
     {
-      StartDrawing();
+      AddPoint();
     }
 
-    // Continue drawing while holding mouse
-    if (Input.GetMouseButton(0) && isDrawing)
+    // Press Enter to finish drawing and capture after 1 second
+    if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) && !isProcessing)
     {
-      ContinueDrawing();
+      StartCoroutine(FinishAndCapture());
     }
 
-    // Finish drawing on mouse up
-    if (Input.GetMouseButtonUp(0) && isDrawing)
+    // Optional: Press Escape to cancel drawing
+    if (Input.GetKeyDown(KeyCode.Escape))
     {
-      FinishDrawing();
+      CancelDrawing();
+    }
+  }
+
+  IEnumerator FinishAndCapture()
+  {
+    isProcessing = true;
+
+    // Close the shape
+    FinishDrawing();
+
+    // Wait 1 second only on the final step (step 4)
+    if (currentStep == 4)
+    {
+      yield return new WaitForSeconds(1f);
     }
 
-    // Press P to cut and save
-    if (Input.GetKeyDown(KeyCode.P))
+    // Process the current step
+    ProcessCurrentStep();
+
+    isProcessing = false;
+  }
+
+  void AddPoint()
+  {
+    Vector3 mouseWorldPos = GetMouseWorldPosition();
+    Vector2 mousePos2D = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
+
+    // Only add point if it's far enough from the last point
+    if (drawnPoints.Count == 0 ||
+        Vector2.Distance(mousePos2D, drawnPoints[drawnPoints.Count - 1]) > minDistanceBetweenPoints)
     {
-      CutAndSaveMask();
+      drawnPoints.Add(mousePos2D);
+
+      // Update line renderer
+      if (lineRenderer != null)
+      {
+        lineRenderer.positionCount = drawnPoints.Count;
+        lineRenderer.SetPosition(drawnPoints.Count - 1, new Vector3(mousePos2D.x, mousePos2D.y, 0));
+      }
+
+      Debug.Log($"Point {drawnPoints.Count} added at {mousePos2D}");
     }
   }
 
@@ -99,6 +144,16 @@ public class MaskCuttingMinigame : MonoBehaviour
     }
   }
 
+  void CancelDrawing()
+  {
+    drawnPoints.Clear();
+    if (lineRenderer != null)
+    {
+      lineRenderer.positionCount = 0;
+    }
+    Debug.Log("Drawing cancelled");
+  }
+
   void FinishDrawing()
   {
     isDrawing = false;
@@ -126,12 +181,51 @@ public class MaskCuttingMinigame : MonoBehaviour
     return targetCamera.ScreenToWorldPoint(mousePos);
   }
 
-  public Sprite CutAndSaveMask()
+  void ProcessCurrentStep()
   {
+    Debug.Log($"[MaskCutting] ProcessCurrentStep called - current step BEFORE processing: {currentStep}");
 
-    // Erase head outline before capturing
+    if (currentStep == 1)
+    {
+      // First step: capture the initial face outline
+      CutAndSaveMask(keepInside: true);
+    }
+    else if (currentStep >= 2 && currentStep <= 4)
+    {
+      // Steps 2-4: cut out eyes and mouth (remove inside)
+      CutAndSaveMask(keepInside: false);
+    }
 
-    headOutline?.SetActive(false);
+    // Clear drawing for next step
+    drawnPoints.Clear();
+    if (lineRenderer != null)
+    {
+      lineRenderer.positionCount = 0;
+    }
+
+    // Move to next step
+    currentStep++;
+    Debug.Log($"[MaskCutting] Step incremented to: {currentStep}");
+
+    // Check if we're done
+    if (currentStep <= 4)
+    {
+      Debug.Log($"[MaskCutting] Step {currentStep}: Draw {stepNames[currentStep - 1]}");
+    }
+    else
+    {
+      Debug.Log("[MaskCutting] All steps complete! Final mask saved.");
+      // Optionally disable the script or trigger next phase
+    }
+  }
+
+  public Sprite CutAndSaveMask(bool keepInside = true)
+  {
+    // Only disable head outline on the final step
+    if (currentStep == 4 && headOutline != null)
+    {
+      headOutline.SetActive(false);
+    }
 
     if (drawnPoints.Count < 3)
     {
@@ -155,40 +249,81 @@ public class MaskCuttingMinigame : MonoBehaviour
     float aspectRatio = targetCamera.aspect;
     int captureWidth = Mathf.RoundToInt(captureHeight * aspectRatio);
 
-    // Create a new texture with the same dimensions
-    Texture2D maskedTexture = new Texture2D(captureWidth, captureHeight, TextureFormat.RGBA32, false);
+    // For first step, capture from camera. For subsequent steps, use workingTexture
+    Texture2D maskedTexture;
 
-    // Render the sprite to a RenderTexture
-    RenderTexture renderTexture = new RenderTexture(captureWidth, captureHeight, 24);
-    RenderTexture currentRT = RenderTexture.active;
+    if (currentStep == 1)
+    {
+      // First step: capture from camera
+      maskedTexture = new Texture2D(captureWidth, captureHeight, TextureFormat.RGBA32, false);
 
-    targetCamera.targetTexture = renderTexture;
-    targetCamera.Render();
+      // Store original camera settings
+      CameraClearFlags originalClearFlags = targetCamera.clearFlags;
+      Color originalBackgroundColor = targetCamera.backgroundColor;
 
-    RenderTexture.active = renderTexture;
-    maskedTexture.ReadPixels(new Rect(0, 0, captureWidth, captureHeight), 0, 0);
-    maskedTexture.Apply();
+      // Set camera to render with transparent background
+      targetCamera.clearFlags = CameraClearFlags.SolidColor;
+      targetCamera.backgroundColor = new Color(0, 0, 0, 0); // Transparent
 
-    targetCamera.targetTexture = null;
-    RenderTexture.active = currentRT;
-    Destroy(renderTexture);
+      // Render the sprite to a RenderTexture
+      RenderTexture renderTexture = new RenderTexture(captureWidth, captureHeight, 24);
+      RenderTexture currentRT = RenderTexture.active;
+
+      targetCamera.targetTexture = renderTexture;
+      targetCamera.Render();
+
+      RenderTexture.active = renderTexture;
+      maskedTexture.ReadPixels(new Rect(0, 0, captureWidth, captureHeight), 0, 0);
+      maskedTexture.Apply();
+
+      targetCamera.targetTexture = null;
+      RenderTexture.active = currentRT;
+
+      // Restore original camera settings
+      targetCamera.clearFlags = originalClearFlags;
+      targetCamera.backgroundColor = originalBackgroundColor;
+
+      Destroy(renderTexture);
+    }
+    else
+    {
+      // Subsequent steps: work with existing texture
+      if (workingTexture == null)
+      {
+        Debug.LogError("Working texture is null! Cannot continue.");
+        return null;
+      }
+      maskedTexture = new Texture2D(workingTexture.width, workingTexture.height, TextureFormat.RGBA32, false);
+      maskedTexture.SetPixels(workingTexture.GetPixels());
+      maskedTexture.Apply();
+      captureWidth = workingTexture.width;
+      captureHeight = workingTexture.height;
+    }
 
     // Apply mask based on drawn shape
     Color[] pixels = maskedTexture.GetPixels();
 
-    for (int y = 0; y < captureHeight; y++)
+    int textureHeight = maskedTexture.height;
+    int textureWidth = maskedTexture.width;
+
+    for (int y = 0; y < textureHeight; y++)
     {
-      for (int x = 0; x < captureWidth; x++)
+      for (int x = 0; x < textureWidth; x++)
       {
-        int pixelIndex = y * captureWidth + x;
+        int pixelIndex = y * textureWidth + x;
 
         // Convert pixel coordinates to world position
-        Vector2 pixelWorldPos = PixelToWorldPosition(x, y, captureWidth, captureHeight);
+        Vector2 pixelWorldPos = PixelToWorldPosition(x, y, textureWidth, textureHeight);
 
-        // Check if this pixel is inside the drawn shape
-        if (!IsPointInsidePolygon(pixelWorldPos, drawnPoints))
+        bool isInside = IsPointInsidePolygon(pixelWorldPos, drawnPoints);
+
+        // Step 1: Keep inside, remove outside
+        // Steps 2-4: Remove inside, keep outside
+        bool shouldMakeTransparent = keepInside ? !isInside : isInside;
+
+        if (shouldMakeTransparent)
         {
-          // Make pixels outside the drawn shape transparent
+          // Make pixels transparent
           pixels[pixelIndex] = new Color(pixels[pixelIndex].r, pixels[pixelIndex].g,
                                          pixels[pixelIndex].b, 0f);
         }
@@ -198,30 +333,28 @@ public class MaskCuttingMinigame : MonoBehaviour
     maskedTexture.SetPixels(pixels);
     maskedTexture.Apply();
 
-    // Save as PNG
-    byte[] bytes = maskedTexture.EncodeToPNG();
-    string timestamp = System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
-    string filename = "CutMask_" + timestamp + ".png";
-    string path = Path.Combine(Application.dataPath, filename);
-    File.WriteAllBytes(path, bytes);
-    Debug.Log("Mask saved to: " + path);
+    // Store the working texture for next steps
+    workingTexture = maskedTexture;
+
+    // Save as PNG only on final step
+    if (currentStep == 4)
+    {
+      byte[] bytes = maskedTexture.EncodeToPNG();
+      string timestamp = System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+      string filename = "CutMask_" + timestamp + ".png";
+      string path = Path.Combine(Application.dataPath, filename);
+      File.WriteAllBytes(path, bytes);
+      Debug.Log("Mask saved to: " + path);
+    }
 
     // Create and return sprite
     Sprite cutSprite = Sprite.Create(maskedTexture,
-        new Rect(0, 0, captureWidth, captureHeight),
+        new Rect(0, 0, maskedTexture.width, maskedTexture.height),
         new Vector2(0.5f, 0.5f));
 
     // Store for later use
     generatedMaskSprite = cutSprite;
     generatedMaskTexture = maskedTexture;
-    Debug.Log("Mask stored! You can now access it via generatedMaskSprite or generatedMaskTexture");
-
-    // Clear the drawing
-    drawnPoints.Clear();
-    if (lineRenderer != null)
-    {
-      lineRenderer.positionCount = 0;
-    }
 
     return cutSprite;
   }
