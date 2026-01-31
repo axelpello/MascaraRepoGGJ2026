@@ -8,6 +8,7 @@ public class MaskCuttingMinigame : MonoBehaviour
   public Camera targetCamera;
   public SpriteRenderer furnitureSpriteRenderer; // The furniture to cut from
   public LineRenderer lineRenderer; // To show the player's drawing
+  public GameObject headOutline; // This needs to be active during drawing for reference, but deleted after cutting
 
   [Header("Drawing Settings")]
   public float minDistanceBetweenPoints = 0.1f;
@@ -16,8 +17,6 @@ public class MaskCuttingMinigame : MonoBehaviour
 
   [Header("Capture Settings")]
   public int captureHeight = 500;
-  [Range(0f, 1f)]
-  public float maskOpacity = 0.7f; // Adjust transparency of the cut mask
 
   [Header("Output")]
   public Sprite generatedMaskSprite; // Store the cut mask here
@@ -129,6 +128,11 @@ public class MaskCuttingMinigame : MonoBehaviour
 
   public Sprite CutAndSaveMask()
   {
+
+    // Erase head outline before capturing
+
+    headOutline?.SetActive(false);
+
     if (drawnPoints.Count < 3)
     {
       Debug.LogWarning("Need at least 3 points to create a mask!");
@@ -140,6 +144,8 @@ public class MaskCuttingMinigame : MonoBehaviour
       Debug.LogWarning("No furniture sprite assigned!");
       return null;
     }
+
+
 
     // Get the original sprite texture
     Sprite originalSprite = furnitureSpriteRenderer.sprite;
