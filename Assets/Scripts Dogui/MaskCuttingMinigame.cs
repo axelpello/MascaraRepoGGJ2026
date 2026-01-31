@@ -16,6 +16,12 @@ public class MaskCuttingMinigame : MonoBehaviour
 
   [Header("Capture Settings")]
   public int captureHeight = 500;
+  [Range(0f, 1f)]
+  public float maskOpacity = 0.7f; // Adjust transparency of the cut mask
+
+  [Header("Output")]
+  public Sprite generatedMaskSprite; // Store the cut mask here
+  public Texture2D generatedMaskTexture; // Store the texture here
 
   private List<Vector2> drawnPoints = new List<Vector2>();
   private bool isDrawing = false;
@@ -198,6 +204,11 @@ public class MaskCuttingMinigame : MonoBehaviour
     Sprite cutSprite = Sprite.Create(maskedTexture,
         new Rect(0, 0, captureWidth, captureHeight),
         new Vector2(0.5f, 0.5f));
+
+    // Store for later use
+    generatedMaskSprite = cutSprite;
+    generatedMaskTexture = maskedTexture;
+    Debug.Log("Mask stored! You can now access it via generatedMaskSprite or generatedMaskTexture");
 
     // Clear the drawing
     drawnPoints.Clear();
