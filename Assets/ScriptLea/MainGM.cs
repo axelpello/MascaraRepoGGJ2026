@@ -15,13 +15,6 @@ public class MainGM : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            // Don't allow clicking if a minigame is already active
-            if (currentMinigame != null)
-            {
-                Debug.Log("Minigame already active!");
-                return;
-            }
-
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //Guarda la posicion del mouse en mousePos cuando hace click
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero); //En hit se guarda lo que clickeó
             Debug.Log("lo detecto!");
