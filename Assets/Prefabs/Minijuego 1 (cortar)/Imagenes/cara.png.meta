@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: d8f003acb72bbb94ca13cea50364f89c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4469807167707612679
+    second: minijuego1_outline_cara_0
+  - first:
+      213: -6551540777360926410
+    second: minijuego1_outline_cara_1
+  - first:
+      213: -3688740924586514108
+    second: minijuego1_outline_cara_2
+  - first:
+      213: -8209283908761342993
+    second: minijuego1_outline_cara_3
+  - first:
+      213: 7942600289977283140
+    second: minijuego1_outline_cara_4
+  - first:
+      213: -5290674823946983565
+    second: minijuego1_outline_cara_5
+  - first:
+      213: 3080667716635131070
+    second: minijuego1_outline_cara_6
+  - first:
+      213: 5969715661917040001
+    second: minijuego1_outline_cara_7
+  - first:
+      213: -6229902216442271734
+    second: minijuego1_outline_cara_8
+  - first:
+      213: 2016033791820247700
+    second: minijuego1_outline_cara_9
+  - first:
+      213: -5586597909910526749
+    second: minijuego1_outline_cara_10
+  - first:
+      213: 9100139463175853918
+    second: minijuego1_outline_cara_11
+  - first:
+      213: -8720137988677748916
+    second: minijuego1_outline_cara_12
+  - first:
+      213: -1287746634951381198
+    second: minijuego1_outline_cara_13
+  - first:
+      213: 3566202496578229405
+    second: minijuego1_outline_cara_14
+  - first:
+      213: 1794890862188253708
+    second: minijuego1_outline_cara_15
+  - first:
+      213: -1718238585642053544
+    second: minijuego1_outline_cara_16
+  - first:
+      213: -3111848196600997113
+    second: minijuego1_outline_cara_17
+  - first:
+      213: 7363096481228182950
+    second: minijuego1_outline_cara_18
+  - first:
+      213: 6766333074894363524
+    second: minijuego1_outline_cara_19
+  - first:
+      213: 8906601387986561325
+    second: minijuego1_outline_cara_20
+  - first:
+      213: 3110240152505826253
+    second: minijuego1_outline_cara_21
+  - first:
+      213: -3447018678270134896
+    second: minijuego1_outline_cara_22
+  - first:
+      213: 1820973575749677795
+    second: minijuego1_outline_cara_23
+  - first:
+      213: -8026306661897379728
+    second: minijuego1_outline_cara_24
+  - first:
+      213: 4060289223275659620
+    second: minijuego1_outline_cara_25
+  - first:
+      213: 8661160351706998862
+    second: minijuego1_outline_cara_26
+  - first:
+      213: 1921511077072536023
+    second: minijuego1_outline_cara_27
+  - first:
+      213: 4596440249303621306
+    second: minijuego1_outline_cara_28
+  - first:
+      213: 4501387907160727522
+    second: minijuego1_outline_cara_29
+  - first:
+      213: 1586894458386728936
+    second: minijuego1_outline_cara_30
+  - first:
+      213: -5069205040685015301
+    second: minijuego1_outline_cara_31
+  - first:
+      213: -3737543084300634316
+    second: minijuego1_outline_cara_32
+  - first:
+      213: -4264342978373653434
+    second: minijuego1_outline_cara_33
+  - first:
+      213: -4676765926081573197
+    second: minijuego1_outline_cara_34
+  - first:
+      213: 1026562268328950308
+    second: minijuego1_outline_cara_35
+  - first:
+      213: 4404841370963216242
+    second: minijuego1_outline_cara_36
+  - first:
+      213: 5563857419369193506
+    second: minijuego1_outline_cara_37
+  - first:
+      213: 8294181378811053814
+    second: minijuego1_outline_cara_38
+  - first:
+      213: 1632740758228525397
+    second: minijuego1_outline_cara_39
+  - first:
+      213: 3462476152004349243
+    second: minijuego1_outline_cara_40
+  - first:
+      213: 2436036794683757405
+    second: minijuego1_outline_cara_41
+  - first:
+      213: 3461459349804866343
+    second: minijuego1_outline_cara_42
+  - first:
+      213: 1299327772747261421
+    second: minijuego1_outline_cara_43
+  - first:
+      213: 2698110291637058207
+    second: minijuego1_outline_cara_44
+  - first:
+      213: 7253091648804971916
+    second: minijuego1_outline_cara_45
+  - first:
+      213: -4667331126547682183
+    second: minijuego1_outline_cara_46
+  - first:
+      213: 1852499117565897717
+    second: minijuego1_outline_cara_47
+  - first:
+      213: 5934817543912952697
+    second: minijuego1_outline_cara_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_0
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 774
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9fa42201e08f1c0800000000000000
+      internalID: -4469807167707612679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_1
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 780
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6395ae1ef504415a0800000000000000
+      internalID: -6551540777360926410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_2
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 783
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44923914ca5feccc0800000000000000
+      internalID: -3688740924586514108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_3
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 778
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb23f597c3c21e80800000000000000
+      internalID: -8209283908761342993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_4
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 765
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442b20dc1e8c93e60800000000000000
+      internalID: 7942600289977283140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_5
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 770
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377a980674fb396b0800000000000000
+      internalID: -5290674823946983565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_6
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 757
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcfc0957fab0ca20800000000000000
+      internalID: 3080667716635131070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_7
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 751
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18da6aef3c0b8d250800000000000000
+      internalID: 5969715661917040001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_8
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 738
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a082a8b01f0fa89a0800000000000000
+      internalID: -6229902216442271734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_9
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 731
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49231a06d046afb10800000000000000
+      internalID: 2016033791820247700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_10
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 714
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4e7dcccca6872b0800000000000000
+      internalID: -5586597909910526749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_11
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 704
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e575c1d80a03a4e70800000000000000
+      internalID: 9100139463175853918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_12
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 685
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47397853b8dbf680800000000000000
+      internalID: -8720137988677748916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_13
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 675
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fa40f1241012ee0800000000000000
+      internalID: -1287746634951381198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_14
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 643
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9418ada642bd7130800000000000000
+      internalID: 3566202496578229405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_15
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 654
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02535bbabbb8e810800000000000000
+      internalID: 1794890862188253708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_16
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 611
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8509f672c179728e0800000000000000
+      internalID: -1718238585642053544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_17
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 622
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b58ae6d8e70d4d0800000000000000
+      internalID: -3111848196600997113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_18
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 582
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5d8820d39fe2660800000000000000
+      internalID: 7363096481228182950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_19
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 594
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b1e010518d6ed50800000000000000
+      internalID: 6766333074894363524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_20
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 577
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29a0fee5ca9a9b70800000000000000
+      internalID: 8906601387986561325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_21
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 554
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb3440a0fac92b20800000000000000
+      internalID: 3110240152505826253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_22
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 556
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095729376cab920d0800000000000000
+      internalID: -3447018678270134896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_23
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 565
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2bee7b1d5654910800000000000000
+      internalID: 1820973575749677795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_24
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 529
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070614fbd94dc9090800000000000000
+      internalID: -8026306661897379728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_25
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 540
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46141b6498b095830800000000000000
+      internalID: 4060289223275659620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_26
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 498
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48613a737f923870800000000000000
+      internalID: 8661160351706998862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_27
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 508
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d103ecd4249aaa10800000000000000
+      internalID: 1921511077072536023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_28
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 474
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abedc03cd06d9cf30800000000000000
+      internalID: 4596440249303621306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_29
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 484
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efdd82c374287e30800000000000000
+      internalID: 4501387907160727522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_30
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 457
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e74d282a18c50610800000000000000
+      internalID: 1586894458386728936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_31
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 456
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe99509fd096a9b0800000000000000
+      internalID: -5069205040685015301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_32
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 459
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 437fa8ffd54912cc0800000000000000
+      internalID: -3737543084300634316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_33
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 424
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c6b9597a202d4c0800000000000000
+      internalID: -4264342978373653434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_34
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 440
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bec1463b2ac81fb0800000000000000
+      internalID: -4676765926081573197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_35
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 392
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42af09fa1f41f3e00800000000000000
+      internalID: 1026562268328950308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_36
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 409
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277053893e3212d30800000000000000
+      internalID: 4404841370963216242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_37
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 368
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2202c6628dac63d40800000000000000
+      internalID: 5563857419369193506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_38
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 378
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f641b2050ada1370800000000000000
+      internalID: 8294181378811053814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_39
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 344
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5516388a119a8a610800000000000000
+      internalID: 1632740758228525397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_40
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 359
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d0b7b17bf2d0030800000000000000
+      internalID: 3462476152004349243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_41
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 323
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5318eede8a8ec120800000000000000
+      internalID: 2436036794683757405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_42
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 316
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72bd29560f2990030800000000000000
+      internalID: 3461459349804866343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_43
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 336
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de56665a9b3280210800000000000000
+      internalID: 1299327772747261421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_44
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 302
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a3ad9d30d917520800000000000000
+      internalID: 2698110291637058207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_45
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 295
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c856f521d6828a460800000000000000
+      internalID: 7253091648804971916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_46
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 289
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c6009a11f4a3fb0800000000000000
+      internalID: -4667331126547682183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_47
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 281
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb6d39e12665b910800000000000000
+      internalID: 1852499117565897717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minijuego1_outline_cara_48
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 283
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97310b7bc15bc5250800000000000000
+      internalID: 5934817543912952697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      minijuego1_outline_cara_0: -4469807167707612679
+      minijuego1_outline_cara_1: -6551540777360926410
+      minijuego1_outline_cara_10: -5586597909910526749
+      minijuego1_outline_cara_11: 9100139463175853918
+      minijuego1_outline_cara_12: -8720137988677748916
+      minijuego1_outline_cara_13: -1287746634951381198
+      minijuego1_outline_cara_14: 3566202496578229405
+      minijuego1_outline_cara_15: 1794890862188253708
+      minijuego1_outline_cara_16: -1718238585642053544
+      minijuego1_outline_cara_17: -3111848196600997113
+      minijuego1_outline_cara_18: 7363096481228182950
+      minijuego1_outline_cara_19: 6766333074894363524
+      minijuego1_outline_cara_2: -3688740924586514108
+      minijuego1_outline_cara_20: 8906601387986561325
+      minijuego1_outline_cara_21: 3110240152505826253
+      minijuego1_outline_cara_22: -3447018678270134896
+      minijuego1_outline_cara_23: 1820973575749677795
+      minijuego1_outline_cara_24: -8026306661897379728
+      minijuego1_outline_cara_25: 4060289223275659620
+      minijuego1_outline_cara_26: 8661160351706998862
+      minijuego1_outline_cara_27: 1921511077072536023
+      minijuego1_outline_cara_28: 4596440249303621306
+      minijuego1_outline_cara_29: 4501387907160727522
+      minijuego1_outline_cara_3: -8209283908761342993
+      minijuego1_outline_cara_30: 1586894458386728936
+      minijuego1_outline_cara_31: -5069205040685015301
+      minijuego1_outline_cara_32: -3737543084300634316
+      minijuego1_outline_cara_33: -4264342978373653434
+      minijuego1_outline_cara_34: -4676765926081573197
+      minijuego1_outline_cara_35: 1026562268328950308
+      minijuego1_outline_cara_36: 4404841370963216242
+      minijuego1_outline_cara_37: 5563857419369193506
+      minijuego1_outline_cara_38: 8294181378811053814
+      minijuego1_outline_cara_39: 1632740758228525397
+      minijuego1_outline_cara_4: 7942600289977283140
+      minijuego1_outline_cara_40: 3462476152004349243
+      minijuego1_outline_cara_41: 2436036794683757405
+      minijuego1_outline_cara_42: 3461459349804866343
+      minijuego1_outline_cara_43: 1299327772747261421
+      minijuego1_outline_cara_44: 2698110291637058207
+      minijuego1_outline_cara_45: 7253091648804971916
+      minijuego1_outline_cara_46: -4667331126547682183
+      minijuego1_outline_cara_47: 1852499117565897717
+      minijuego1_outline_cara_48: 5934817543912952697
+      minijuego1_outline_cara_5: -5290674823946983565
+      minijuego1_outline_cara_6: 3080667716635131070
+      minijuego1_outline_cara_7: 5969715661917040001
+      minijuego1_outline_cara_8: -6229902216442271734
+      minijuego1_outline_cara_9: 2016033791820247700
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
