@@ -4,7 +4,7 @@ using UnityEngine;
 public class Mopa : MonoBehaviour
 {
     int puntos = 0;
-    int maxPuntos = 1;
+    int maxPuntos = 5;
     public TextMeshProUGUI contadorPuntos;
     public GameObject MiniJuego3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
