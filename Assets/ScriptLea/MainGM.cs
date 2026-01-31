@@ -34,15 +34,18 @@ public class MainGM : MonoBehaviour
                     switch (hit.collider.tag)
                     {
                         case "0":
-                            currentMinigame = Instantiate(MiniJuegos[0], new Vector3(0, 0, 0), Quaternion.identity);
+                            MiniJuegos[0].transform.gameObject.SetActive(true);
+                            //Instantiate(MiniJuegos[0], new Vector3(0, 0, 0), Quaternion.identity);
                             Debug.Log("0");
                             break;
                         case "1":
-                            currentMinigame = Instantiate(MiniJuegos[1], new Vector3(0, 0, 0), Quaternion.identity);
+                            MiniJuegos[0].transform.gameObject.SetActive(true);
+                            //Instantiate(MiniJuegos[1], new Vector3(0, 0, 0), Quaternion.identity);
                             Debug.Log("1");
                             break;
                         case "2":
-                            currentMinigame = Instantiate(MiniJuegos[2], new Vector3(0, 0, 0), Quaternion.identity);
+                            MiniJuegos[0].transform.gameObject.SetActive(true);
+                            //Instantiate(MiniJuegos[2], new Vector3(0, 0, 0), Quaternion.identity);
                             Debug.Log("2");
                             break;
 

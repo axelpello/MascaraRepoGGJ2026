@@ -1,16 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void BtnJugar()
     {
-        
+        SceneManager.LoadScene("SampleScene");
     }
-
-    // Update is called once per frame
-    void Update()
+    public void BtnSalir()
     {
-        
+        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
