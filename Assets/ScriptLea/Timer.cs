@@ -3,13 +3,14 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    public int maxTime = 20;
+    //public int maxTime = 20;
     public float tiempoActual;
     public bool activo = false;
+    TextMeshProUGUI timer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        timer = gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -18,7 +19,7 @@ public class Timer : MonoBehaviour
         if (!activo) return;
 
         tiempoActual -= Time.deltaTime;
-        gameObject.GetComponent<TextMeshProUGUI>().text = "La policia llegara en: " + tiempoActual.ToString("F0");
+        timer.text = "La policia llegara en: " + tiempoActual.ToString("F0");
 
         if (tiempoActual <= 0f)
         {
@@ -30,6 +31,7 @@ public class Timer : MonoBehaviour
     }
     void TerminoElTimer()
     {
-        Debug.Log("⏰ Timer terminado");
+        timer.text = "llego la ley >O";
+
     }
 }
