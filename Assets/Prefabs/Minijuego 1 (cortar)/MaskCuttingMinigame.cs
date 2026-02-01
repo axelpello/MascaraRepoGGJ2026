@@ -25,7 +25,8 @@ public class MaskCuttingMinigame : MonoBehaviour
   public GameObject mouthReference; // Mouth template - shown in step 4
 
   [Header("Drawing Settings")]
-  public float minDistanceBetweenPoints = 0.1f; // Minimum distance between drawn points (prevents too many points)
+  public float minDistanceBetweenPoints = 0.1f; // Minimum distance between drawn points (prevents too many points) 
+  public float closeLoopThreshold = 0.3f; // Distance threshold to detect clicking near first point to close the shape  
   public Color drawingColor = Color.red; // Color of the line player draws
   public float lineWidth = 0.05f; // Width of the drawing line
 
@@ -75,23 +76,16 @@ public class MaskCuttingMinigame : MonoBehaviour
 
   /// <summary>
   /// Handle player input each frame:
-  /// - Left click: Add point to drawing
-  /// - Enter: Complete current step and process mask
+  /// - Left click: Add point to drawing (auto-completes if clicking near first point)
   /// - Escape: Cancel current drawing
   /// </summary>
   void Update()
   {
     // Left mouse button: Add a point to the current drawing
-    if (Input.GetMouseButtonDown(0))
+    // Now automatically closes shape when clicking near the first point
+    if (Input.GetMouseButtonDown(0) && !isProcessing)
     {
       AddPoint();
-    }
-
-    // Enter key: Close the shape and process this step
-    // isProcessing prevents multiple simultaneous Enter presses
-    if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) && !isProcessing)
-    {
-      StartCoroutine(FinishAndCapture());
     }
 
     // Escape key: Clear current drawing without processing
@@ -183,12 +177,25 @@ public class MaskCuttingMinigame : MonoBehaviour
   /// <summary>
   /// Add a point to the current drawing when player clicks
   /// Only adds if point is far enough from last point (prevents too many clustered points)
+  /// Automatically closes shape and completes step if clicking near the first point
   /// </summary>
   void AddPoint()
   {
     // Convert mouse screen position to world position
     Vector3 mouseWorldPos = GetMouseWorldPosition();
     Vector2 mousePos2D = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
+
+    // Check if clicking near the first point to close the loop (needs at least 3 points for a valid shape)
+    if (drawnPoints.Count >= 3)
+    {
+      float distanceToFirst = Vector2.Distance(mousePos2D, drawnPoints[0]);
+      if (distanceToFirst <= closeLoopThreshold)
+      {
+        // Player clicked near first point - close the shape and process this step
+        StartCoroutine(FinishAndCapture());
+        return;
+      }
+    }
 
     // Only add point if:
     // 1) This is the first point, OR
